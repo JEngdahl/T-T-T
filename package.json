@@ -1,0 +1,23 @@
+{
+  "name": "t-t-t",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JEngdahl/T-T-T.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JEngdahl/T-T-T/issues"
+  },
+  "homepage": "https://github.com/JEngdahl/T-T-T#readme",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "express": "^4.15.2"
+  }
+}
