@@ -23,10 +23,25 @@ $(document).ready(function(){
           a = false
         }
       })
-      console.log(a)
       return a
 
     }
+
+    for(i=0; i!==2; i++){
+      if(arr[0][i] === type && arr[1][i] === type && arr[2][i] === type){
+        win = true
+      }
+    }
+
+    if(arr[0][0] === type && arr[1][1] === type && arr[2][2] === type){
+      win = true
+    }
+
+    if(arr[0][2] === type && arr[1][1] === type && arr[2][0] === type){
+      win = true
+    }
+
+
     return win
 
   }
@@ -34,15 +49,20 @@ $(document).ready(function(){
 
   $('li').click(function(v){
     if($('.player').text() === "PLAYER ONE"){
-
       $(this).text('X')
-      console.log(checkWin("X"))
+      if(checkWin("X")){
+        $('.player').text("PLAYER ONE WINS!")
+      } else {
       $('.player').text("PLAYER TWO")
+      }
     } else {
-
       $(this).text('O')
+      if(checkWin("O")){
+        $('.player').text("PLAYER TWO WINS!")
+      } else {
       $('.player').text("PLAYER ONE")
     }
+  }
 })
 
 
